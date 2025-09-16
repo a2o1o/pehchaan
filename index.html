@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pehchaan – Finding My Voice</title>
+  <meta name="description" content="Pehchaan is a student-led initiative helping girls build identity and voice through structured storytelling and measured practice." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;          /* slate-900 */
+      --ink:#0b0f1a;         /* near black */
+      --card:#121a32;        /* deep slate */
+      --muted:#94a3b8;       /* slate-400 */
+      --text:#e2e8f0;        /* slate-200 */
+      --brand:#22d3ee;       /* cyan-400 */
+      --accent:#a78bfa;      /* violet-400 */
+      --success:#34d399;     /* emerald-400 */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    /* Header / Nav */
+    header{
+      position:sticky;top:0;z-index:50;background:linear-gradient(180deg,rgba(15,23,42,0.95),rgba(15,23,42,0.70));backdrop-filter:blur(8px);
+      border-bottom:1px solid rgba(148,163,184,0.15)
+    }
+    .nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:0.2px}
+    .brand-dot{width:10px;height:10px;border-radius:50%;background:conic-gradient(from 180deg,var(--brand),var(--accent))}
+    .links a{margin-left:18px;color:var(--text);opacity:0.9;font-weight:600}
+    .links a:hover{opacity:1}
+
+    /* Hero */
+    .hero{max-width:1100px;margin:0 auto;padding:72px 20px 40px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:28px}
+    .h1{font-size:40px;line-height:1.15;margin:0 0 14px}
+    .lead{font-size:18px;color:var(--muted);margin:0 0 18px}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:#0b1226;border:1px solid rgba(168,139,250,0.25);color:#c7d2fe;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px}
+    .cta{display:flex;gap:12px;margin-top:10px}
+    .btn{padding:12px 16px;border-radius:12px;border:1px solid rgba(148,163,184,0.25);background:#0b1226;color:#e2e8f0;font-weight:700}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--accent));color:#09121f;border:0}
+    .btn:hover{transform:translateY(-1px)}
+    .card{background:var(--card);border:1px solid rgba(148,163,184,0.15);border-radius:16px;padding:18px}
+
+    /* Sections */
+    section{max-width:1100px;margin:0 auto;padding:28px 20px}
+    h2{font-size:22px;margin:0 0 14px}
+    .muted{color:var(--muted)}
+
+    /* Edge grid */
+    .grid{display:grid;gap:18px}
+    @media(min-width:800px){.grid.cols-2{grid-template-columns:1fr 1fr}}
+    @media(min-width:900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-4{grid-template-columns:repeat(4,1fr)}}
+    .edge{display:flex;gap:12px}
+    .edge .icon{font-size:20px;line-height:1}
+
+    /* Journey */
+    .timeline{border-left:2px dashed rgba(148,163,184,0.25);padding-left:16px;margin-left:8px}
+    .tick{margin:14px 0}
+    .tick .when{font-size:12px;color:#cbd5e1;background:#0b1226;border:1px solid rgba(148,163,184,0.2);padding:4px 8px;border-radius:999px}
+    .tick .what{margin:8px 0 0}
+
+    /* Stories */
+    .quotes{display:grid;gap:18px}
+    @media(min-width:800px){.quotes{grid-template-columns:1fr 1fr}}
+    blockquote{margin:0;padding:16px 18px;border-left:3px solid var(--brand);background:#0b1226;border-radius:10px}
+    cite{display:block;margin-top:8px;color:#cbd5e1;font-style:normal}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(148,163,184,0.15);margin-top:40px}
+    .foot{max-width:1100px;margin:0 auto;padding:18px 20px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand"><span class="brand-dot"></span> Pehchaan</div>
+      <div class="links">
+        <a href="#edge">Why Different</a>
+        <a href="#journey">Journey</a>
+        <a href="#stories">Stories</a>
+        <a href="#next">What’s Next</a>
+        <a href="resources/impact-report.pdf" target="_blank" rel="noopener">Impact Report</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <span class="pill">Started 2025 • Student-led</span>
+      <h1 class="h1">Pehchaan: Not just public speaking — <span style="color:var(--brand)">finding your voice</span>, your story, your future.</h1>
+      <p class="lead">A focused program for girls to build identity and opportunity through structured storytelling, peer mentorship, and measured progress.</p>
+      <div class="cta">
+        <a class="btn primary" href="#edge">See what makes us different</a>
+        <a class="btn" href="resources/impact-report.pdf" target="_blank" rel="noopener">View Impact Report</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="margin:0 0 8px">Snapshot</h3>
+      <ul class="muted" style="margin:0;padding-left:18px">
+        <li>Batch 1 (Kalkaji, Delhi): 4 participants, 3 sessions</li>
+        <li>Scaffolds used: “Who I Am”, “A Moment That Shaped Me”</li>
+        <li>Measurement: before/after clips + feedback forms</li>
+        <li>Mentors: student-led, peer-to-peer</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="edge">
+    <h2>What Makes Us Different</h2>
+    <p class="muted">Not generic speeches. Pehchaan is designed as a repeatable, measurable pathway to self-expression.</p>
+    <div class="grid cols-2">
+      <div class="card edge"><div class="icon">🎤</div><div><strong>Story scaffolds, not speeches</strong><br><span class="muted">Structured prompts (“Who I Am”, “A Moment…”) create authentic ownership and clarity.</span></div></div>
+      <div class="card edge"><div class="icon">🤝</div><div><strong>By peers, for peers</strong><br><span class="muted">Student mentors make the space relatable and low-pressure — confidence grows faster.</span></div></div>
+      <div class="card edge"><div class="icon">📊</div><div><strong>Measured impact</strong><br><span class="muted">Before/after recordings and feedback forms show real progress, not assumptions.</span></div></div>
+      <div class="card edge"><div class="icon">🌱</div><div><strong>Ecosystem, not a camp</strong><br><span class="muted">Links to Maitri Community & school outreach enable continuity and opportunities.</span></div></div>
+    </div>
+  </section>
+
+  <section id="journey">
+    <h2>Our Journey</h2>
+    <div class="timeline">
+      <div class="tick">
+        <span class="when">May–July 2025</span>
+        <div class="what"><strong>Inception</strong> — identified need for structured, identity-first speaking support; designed scaffolds and pilot plan.</div>
+      </div>
+      <div class="tick">
+        <span class="when">July 2025</span>
+        <div class="what"><strong>Batch 1 (Pilot)</strong> — 3 sessions with 4 girls in Kalkaji; peer-led coaching, story drafts, posture/voice drills.</div>
+      </div>
+      <div class="tick">
+        <span class="when">August 2025</span>
+        <div class="what"><strong>Impact Report</strong> — compiled before/after clips and feedback into a public report (<a href="resources/impact-report.pdf" target="_blank" rel="noopener">PDF</a>).</div>
+      </div>
+      <div class="tick">
+        <span class="when">Late 2025</span>
+        <div class="what"><strong>Next Steps</strong> — plan Batch 2 with expanded cohort and mentorship via Maitri Community.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stories">
+    <h2>Stories That Matter</h2>
+    <div class="quotes">
+      <blockquote>
+        “Earlier I would freeze when asked to introduce myself. Now I can share my story without reading.”
+        <cite>— Participant, Kalkaji</cite>
+      </blockquote>
+      <blockquote>
+        “I didn’t know my small moment could be a powerful speech. The scaffold helped me find the words.”
+        <cite>— Participant, Kalkaji</cite>
+      </blockquote>
+    </div>
+    <p class="muted" style="margin-top:12px">(*Replace quotes with real consented testimonials; you can also embed a 30s before/after clip here.)</p>
+  </section>
+
+  <section id="next">
+    <h2>What’s Next</h2>
+    <div class="grid cols-3">
+      <div class="card"><strong>Batch 2 (Planned)</strong><br><span class="muted">Target: 8–12 participants • 4 sessions • peer mentors + alumni buddies.</span></div>
+      <div class="card"><strong>Maitri Linkages</strong><br><span class="muted">Community mentorship & exposure to scholarships, internships, and showcases.</span></div>
+      <div class="card"><strong>Evidence Locker</strong><br><span class="muted">Public folder with anonymized artefacts: scaffolds, rubrics, and progress metrics.</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot">
+      <div>© 2025 Pehchaan Initiative</div>
+      <div>Contact: <a href="mailto:pehchaan.initiative@gmail.com">pehchaan.initiative@gmail.com</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>
